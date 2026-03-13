@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# SQLTools session files
+*.session.sql
+
+# Environment files
+.env
+.venv/
+
+# Dataset files (optional if large)
+data/raw/
+
+# OS files
+.DS_Store
+Thumbs.db
