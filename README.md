@@ -1,7 +1,7 @@
-# game_dashboard
-Steam Game Data Analytics Project
+# Steam Game Data Analysis Dashboard
+This project uses data scraped from over 120k steam games to determine game success. Data points like price, rating, ownership, publishers/developers, etc are used to compare and predict game success accuracy.
 
-# Data Sources
+## Data Sources
 
 This project uses the Steam Games Dataset available on Kaggle.
 
