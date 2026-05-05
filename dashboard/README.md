@@ -1,21 +1,27 @@
 # Steam Games Dashboard
 
-## Setup Instructions
+## Local Web Dashboard Setup
 
-1. Open PowerBI Desktop.
+This project now uses a local Streamlit dashboard instead of PowerBI.
 
-2. Click "Get Data" > "Text/CSV" > Select `data/processed/dashboard_data.csv`.
+### Run the dashboard
 
-3. Load the data.
+1. Install dependencies:
+   - `pip install -r dashboard/requirements.txt`
 
-4. Create visualizations:
+2. Launch the app:
+   - `streamlit run dashboard/app.py`
 
-   - **EDA Tab**: Bar charts for genres vs average owners, scatter plots for price vs owners.
+### Features
 
-   - **Modeling Tab**: Show model R2, feature importances (export from notebooks).
+- Interactive filtering by genre, price, release year, free/paid, and success status
+- Genre performance bar chart
+- Price vs owners scatter plot
+- Free vs paid success comparison
+- Release-year trend line chart
+- Top games by estimated owners
+- **Modeling & Clustering page** with classification metrics and K-means cluster analysis
 
-   - **Clustering Tab**: Scatter plots colored by cluster.
+### Data source
 
-   - **Time Series Tab**: Line chart of average owners by year.
-
-5. Save as `steam_games_dashboard.pbix`.
+Loads prepared dashboard data from `data/processed/dashboard_data.csv`.
