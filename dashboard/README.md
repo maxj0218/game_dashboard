@@ -6,11 +6,15 @@ This project now uses a local Streamlit dashboard instead of PowerBI.
 
 ### Run the dashboard
 
-1. Install dependencies:
+1. From the project root, activate a Python virtual environment:
+   - Windows PowerShell: `python -m venv .venv` then `& .venv\Scripts\Activate.ps1`
+   - macOS/Linux: `python3 -m venv .venv` then `source .venv/bin/activate`
+2. Install dependencies:
    - `pip install -r dashboard/requirements.txt`
-
-2. Launch the app:
+3. Launch the app:
    - `streamlit run dashboard/app.py`
+
+Then open `http://localhost:8501` in your browser.
 
 ### Features
 
@@ -21,6 +25,13 @@ This project now uses a local Streamlit dashboard instead of PowerBI.
 - Release-year trend line chart
 - Top games by estimated owners
 - **Modeling & Clustering page** with classification metrics and K-means cluster analysis
+
+### What’s included
+
+- `dashboard/app.py` — Streamlit app for interactive dashboard and modeling insights
+- `dashboard/requirements.txt` — dependencies for running the dashboard
+- `data/processed/dashboard_data.csv` — prepared dashboard dataset
+- `data/processed/cleaned_games.csv` — cleaned game dataset used for modeling
 
 ### Data source
 
